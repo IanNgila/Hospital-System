@@ -9863,3 +9863,71 @@ Migrating to CreateStaffs (20221031060900)
   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 12:42:30 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (22.5ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 451ms (Views: 160.0ms | ActiveRecord: 23.3ms | Allocations: 35707)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 12:42:34 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.9ms | ActiveRecord: 0.2ms | Allocations: 1254)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 12:42:36 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 942)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 12:42:37 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.1ms | Allocations: 626)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 12:42:41 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.5ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.5ms | Allocations: 626)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 12:42:52 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.2ms | ActiveRecord: 0.2ms | Allocations: 1238)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 12:46:56 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 610)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 12:47:00 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.2ms | Allocations: 610)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 12:47:03 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.1ms | Allocations: 610)
+
+
+Started POST "/staffs%0A" for 127.0.0.1 at 2022-10-31 12:55:00 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/staffs%0A"):
+  
