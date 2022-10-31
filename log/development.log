@@ -9770,6 +9770,7 @@ Migrating to CreatePharmacies (20221028085417)
   [1m[36mTRANSACTION (5.7ms)[0m  [1m[36mcommit transaction[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+<<<<<<< HEAD
 Started GET "/" for ::1 at 2022-10-28 19:36:21 +0300
   [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by Rails::WelcomeController#index as HTML
@@ -9931,3 +9932,5 @@ Started POST "/staffs%0A" for 127.0.0.1 at 2022-10-31 12:55:00 +0300
   
 ActionController::RoutingError (No route matches [POST] "/staffs%0A"):
   
+=======
+>>>>>>> dab0b34463f4b4a5ad8439d2709c97c934c82ca2
