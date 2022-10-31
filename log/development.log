@@ -9863,3 +9863,806 @@ Migrating to CreateStaffs (20221031060900)
   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 09:36:56 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 931)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 09:49:55 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.3ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 25ms (Views: 16.8ms | ActiveRecord: 3.2ms | Allocations: 5402)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 09:49:59 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.5ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.0ms | ActiveRecord: 0.5ms | Allocations: 655)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 09:50:01 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1238)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 09:50:03 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 610)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 09:51:15 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (6.0ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 5.6ms | ActiveRecord: 6.0ms | Allocations: 1238)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 09:51:49 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (6.3ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 5.4ms | ActiveRecord: 6.3ms | Allocations: 610)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 09:51:51 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (1.4ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 1.4ms | Allocations: 1238)
+
+
+Started DELETE "/patients/undefined" for 127.0.0.1 at 2022-10-31 09:52:41 +0300
+Processing by PatientsController#destroy as */*
+  Parameters: {"id"=>"undefined"}
+  [1m[36mPatient Load (31.9ms)[0m  [1m[34mSELECT "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/patients_controller.rb:44:in `set_patient'
+Completed 404 Not Found in 77ms (ActiveRecord: 31.9ms | Allocations: 2090)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Patient with 'id'=undefined):
+  
+app/controllers/patients_controller.rb:44:in `set_patient'
+Started DELETE "/users/signout" for 127.0.0.1 at 2022-10-31 09:53:02 +0300
+Processing by Users::Devise::SessionsController#destroy as */*
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 341)
+
+
+Started DELETE "/users/signout" for 127.0.0.1 at 2022-10-31 09:53:02 +0300
+Processing by Users::Devise::SessionsController#destroy as */*
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started DELETE "/users/signout" for 127.0.0.1 at 2022-10-31 09:53:03 +0300
+Processing by Users::Devise::SessionsController#destroy as */*
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 09:55:55 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (4.6ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 6.2ms | ActiveRecord: 4.6ms | Allocations: 609)
+
+
+Started GET "/holder.js/100px180" for 127.0.0.1 at 2022-10-31 09:56:42 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/holder.js/100px180"):
+  
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 09:56:44 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (3.5ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 2.8ms | ActiveRecord: 3.5ms | Allocations: 609)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 09:57:24 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 610)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 09:58:06 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (1.0ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 1.0ms | Allocations: 1238)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 09:58:25 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 611)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 09:58:28 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms | Allocations: 1238)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 09:59:09 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 1238)
+
+
+Started GET "/staff" for ::1 at 2022-10-31 10:02:21 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/staff"):
+  
+Started GET "/staffs" for ::1 at 2022-10-31 10:02:32 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.2ms | Allocations: 609)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:14 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x00007fa9a43f8978>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (24.8ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:14.055914"], ["updated_at", "2022-10-31 07:06:14.055914"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (44.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 160ms (Views: 34.0ms | ActiveRecord: 73.2ms | Allocations: 17649)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:19 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x00007fa9a4fa02f8>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.3ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:19.273346"], ["updated_at", "2022-10-31 07:06:19.273346"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (11.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 18ms (Views: 0.6ms | ActiveRecord: 11.7ms | Allocations: 2045)
+
+
+Started GET "/staffs" for ::1 at 2022-10-31 10:06:27 +0300
+Processing by StaffsController#index as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.1ms | Allocations: 917)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:36 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x00007fa9a01e5d88>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.4ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:36.469441"], ["updated_at", "2022-10-31 07:06:36.469441"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (12.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 20ms (Views: 0.6ms | ActiveRecord: 13.3ms | Allocations: 2046)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:41 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x00007fa9a4ea2360>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.5ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:41.574785"], ["updated_at", "2022-10-31 07:06:41.574785"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (11.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 21ms (Views: 0.7ms | ActiveRecord: 12.4ms | Allocations: 2045)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:42 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x00007fa9a017a650>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.4ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:42.612407"], ["updated_at", "2022-10-31 07:06:42.612407"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (8.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 15ms (Views: 0.8ms | ActiveRecord: 9.2ms | Allocations: 2040)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:43 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x00007fa9a4e06dc0>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.4ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:43.409511"], ["updated_at", "2022-10-31 07:06:43.409511"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 15ms (Views: 0.5ms | ActiveRecord: 6.7ms | Allocations: 2040)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:44 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x00007fa9a0076560>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.4ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:44.018577"], ["updated_at", "2022-10-31 07:06:44.018577"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (11.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 18ms (Views: 0.7ms | ActiveRecord: 11.5ms | Allocations: 2045)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:44 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x0000563e98daaa20>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.9ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:44.277809"], ["updated_at", "2022-10-31 07:06:44.277809"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (12.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 21ms (Views: 0.7ms | ActiveRecord: 13.3ms | Allocations: 2040)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:45 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x0000563e98c42d90>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.4ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:45.080077"], ["updated_at", "2022-10-31 07:06:45.080077"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (13.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 20ms (Views: 0.7ms | ActiveRecord: 13.9ms | Allocations: 2040)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:46 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x0000563e98bb9720>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.5ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:46.794330"], ["updated_at", "2022-10-31 07:06:46.794330"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (13.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 20ms (Views: 0.6ms | ActiveRecord: 13.8ms | Allocations: 2040)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:47 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x0000563e98b5c908>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.4ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:47.675359"], ["updated_at", "2022-10-31 07:06:47.675359"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (12.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 20ms (Views: 0.6ms | ActiveRecord: 13.3ms | Allocations: 2040)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:48 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x0000563e98a8dab8>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.8ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:48.413520"], ["updated_at", "2022-10-31 07:06:48.413520"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (11.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 19ms (Views: 0.5ms | ActiveRecord: 12.4ms | Allocations: 2040)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:49 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x00007fa9a4c8fb40>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.5ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:49.138322"], ["updated_at", "2022-10-31 07:06:49.138322"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (13.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 21ms (Views: 0.8ms | ActiveRecord: 14.0ms | Allocations: 2040)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:49 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x00007fa9a4bbb980>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.4ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:49.873481"], ["updated_at", "2022-10-31 07:06:49.873481"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (14.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 22ms (Views: 0.7ms | ActiveRecord: 14.9ms | Allocations: 2043)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:50 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x0000563e989f1898>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.7ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:50.623018"], ["updated_at", "2022-10-31 07:06:50.623018"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (15.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 23ms (Views: 0.8ms | ActiveRecord: 15.8ms | Allocations: 2040)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:51 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x00007fa9a4ad1240>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.4ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:51.380059"], ["updated_at", "2022-10-31 07:06:51.380059"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (13.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 20ms (Views: 0.6ms | ActiveRecord: 13.5ms | Allocations: 2040)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:52 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x00007fa9a4a7a990>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.4ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:52.068497"], ["updated_at", "2022-10-31 07:06:52.068497"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 15ms (Views: 0.7ms | ActiveRecord: 6.6ms | Allocations: 2040)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:52 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x00007fa9a4a4de68>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.5ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:52.769276"], ["updated_at", "2022-10-31 07:06:52.769276"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (10.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 16ms (Views: 0.7ms | ActiveRecord: 11.0ms | Allocations: 2040)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:53 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x00007fa9a4a2b890>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.7ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:53.453900"], ["updated_at", "2022-10-31 07:06:53.453900"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (12.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 21ms (Views: 0.9ms | ActiveRecord: 12.9ms | Allocations: 2041)
+
+
+Started POST "/staffs" for ::1 at 2022-10-31 10:06:54 +0300
+Processing by StaffsController#create as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+[31mUnpermitted parameter: :staff. Context: { controller: StaffsController, action: create, request: #<ActionDispatch::Request:0x00007fa9a4a08ae8>, params: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "controller"=>"staffs", "action"=>"create", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mStaff Create (0.4ms)[0m  [1m[32mINSERT INTO "staffs" ("Name", "Job_description", "Contact", "Email", "Start_time", "End_time", "Status", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["Name", "leroy"], ["Job_description", "Manager"], ["Contact", 123456], ["Email", "leroythomas051@gmail.com"], ["Start_time", 12345], ["End_time", 1234], ["Status", "indisposed"], ["created_at", "2022-10-31 07:06:54.084559"], ["updated_at", "2022-10-31 07:06:54.084559"]]
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (14.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/staffs_controller.rb:20:in `create'
+Completed 201 Created in 22ms (Views: 0.7ms | ActiveRecord: 15.2ms | Allocations: 2040)
+
+
+Started GET "/staffs" for ::1 at 2022-10-31 10:07:02 +0300
+Processing by StaffsController#index as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+  [1m[36mStaff Load (0.3ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.3ms | Allocations: 3538)
+
+
+Started GET "/staffs/8" for ::1 at 2022-10-31 10:07:11 +0300
+Processing by StaffsController#show as */*
+  Parameters: {"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed", "id"=>"8", "staff"=>{"Name"=>"leroy", "Job_description"=>"Manager", "Contact"=>123456, "Email"=>"leroythomas051@gmail.com", "Start_time"=>12345, "End_time"=>1234, "Status"=>"indisposed"}}
+  [1m[36mStaff Load (0.3ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs" WHERE "staffs"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/controllers/staffs_controller.rb:44:in `set_staff'
+Completed 200 OK in 3ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 780)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 10:09:23 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.4ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.4ms | Allocations: 3538)
+
+
+Started DELETE "/shifts/undefined" for 127.0.0.1 at 2022-10-31 10:10:03 +0300
+  
+ActionController::RoutingError (No route matches [DELETE] "/shifts/undefined"):
+  
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 10:10:11 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 1237)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 10:10:13 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.4ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.4ms | Allocations: 3538)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 10:11:47 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.3ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.3ms | Allocations: 3539)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 10:11:59 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.9ms | ActiveRecord: 0.2ms | Allocations: 1238)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 10:12:43 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.3ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.3ms | Allocations: 3539)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 10:15:30 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 3538)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 10:15:39 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.6ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.6ms | Allocations: 3538)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 10:17:02 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.3ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.3ms | Allocations: 3538)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 10:17:04 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.3ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.3ms | Allocations: 3538)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 10:17:06 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.3ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.3ms | Allocations: 3538)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 10:24:24 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.8ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 2.9ms | Allocations: 3698)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 10:24:27 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.6ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 10.7ms | ActiveRecord: 0.6ms | Allocations: 3538)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 10:24:44 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.3ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.3ms | Allocations: 3538)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 10:25:12 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.3ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.3ms | Allocations: 1299)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 10:25:19 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms | Allocations: 3538)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 10:25:30 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.2ms | Allocations: 1238)
+
+
+Started DELETE "/users/signout" for 127.0.0.1 at 2022-10-31 10:25:32 +0300
+Processing by Users::Devise::SessionsController#destroy as */*
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 401 Unauthorized in 10ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 240)
+
+
+Started DELETE "/users/signout" for 127.0.0.1 at 2022-10-31 10:25:33 +0300
+Processing by Users::Devise::SessionsController#destroy as */*
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started DELETE "/users/signout" for 127.0.0.1 at 2022-10-31 10:25:35 +0300
+Processing by Users::Devise::SessionsController#destroy as */*
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started DELETE "/users/signout" for 127.0.0.1 at 2022-10-31 10:25:37 +0300
+Processing by Users::Devise::SessionsController#destroy as */*
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 401 Unauthorized in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started DELETE "/users/signout" for 127.0.0.1 at 2022-10-31 10:26:12 +0300
+Processing by Users::Devise::SessionsController#destroy as */*
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 401 Unauthorized in 3ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 239)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 10:33:49 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.4ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 9.9ms | ActiveRecord: 1.2ms | Allocations: 3698)
+
+
+Started DELETE "/users/signout" for 127.0.0.1 at 2022-10-31 10:42:58 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Users::Devise::SessionsController#destroy as */*
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 401 Unauthorized in 10ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 419)
+
+
+Started GET "/holder.js/100px180" for 127.0.0.1 at 2022-10-31 10:46:37 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/holder.js/100px180"):
+  
+Started POST "/users/signup" for 127.0.0.1 at 2022-10-31 10:47:27 +0300
+Processing by Users::Devise::RegistrationsController#create as */*
+  Parameters: {"username"=>"morio", "email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "registration"=>{"username"=>"morio", "email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[31mUnpermitted parameters: :username, :registration. Context: { controller: Users::Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007fde00bf33e0>, params: {"username"=>"morio", "email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "controller"=>"users/devise/registrations", "action"=>"create", "registration"=>{"username"=>"morio", "email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ngilaian47@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 377ms (Views: 1.1ms | ActiveRecord: 5.2ms | Allocations: 33189)
+
+
+Started POST "/users/signup" for 127.0.0.1 at 2022-10-31 10:47:41 +0300
+Processing by Users::Devise::RegistrationsController#create as */*
+  Parameters: {"username"=>"morio", "email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "registration"=>{"username"=>"morio", "email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[31mUnpermitted parameters: :username, :registration. Context: { controller: Users::Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007fde00861420>, params: {"username"=>"morio", "email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "controller"=>"users/devise/registrations", "action"=>"create", "registration"=>{"username"=>"morio", "email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ngilaian47@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 332ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 3406)
+
+
+Started POST "/users/signup" for 127.0.0.1 at 2022-10-31 10:48:42 +0300
+Processing by Users::Devise::RegistrationsController#create as */*
+  Parameters: {"username"=>"morio", "email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "registration"=>{"username"=>"morio", "email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[31mUnpermitted parameters: :username, :registration. Context: { controller: Users::Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007fde00df6fc0>, params: {"username"=>"morio", "email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "controller"=>"users/devise/registrations", "action"=>"create", "registration"=>{"username"=>"morio", "email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ngilaian47@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+Completed 422 Unprocessable Entity in 312ms (Views: 0.2ms | ActiveRecord: 3.3ms | Allocations: 8860)
+
+
+Started POST "/users/signup" for 127.0.0.1 at 2022-10-31 10:49:03 +0300
+Processing by Users::Devise::RegistrationsController#create as */*
+  Parameters: {"username"=>"morio", "email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "registration"=>{"username"=>"morio", "email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}}
+[31mUnpermitted parameters: :username, :registration. Context: { controller: Users::Devise::RegistrationsController, action: create, request: #<ActionDispatch::Request:0x00007fde00b0a078>, params: {"username"=>"morio", "email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "controller"=>"users/devise/registrations", "action"=>"create", "registration"=>{"username"=>"morio", "email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ngilaian47@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (1.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "sign_in_count", "current_sign_in_at", "last_sign_in_at", "current_sign_in_ip", "last_sign_in_ip", "confirmation_token", "confirmed_at", "confirmation_sent_at", "unconfirmed_email", "failed_attempts", "unlock_token", "locked_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "ngilaian47@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["sign_in_count", 0], ["current_sign_in_at", nil], ["last_sign_in_at", nil], ["current_sign_in_ip", nil], ["last_sign_in_ip", nil], ["confirmation_token", "[FILTERED]"], ["confirmed_at", nil], ["confirmation_sent_at", nil], ["unconfirmed_email", nil], ["failed_attempts", 0], ["unlock_token", "[FILTERED]"], ["locked_at", nil], ["created_at", "2022-10-31 07:49:03.988989"], ["updated_at", "2022-10-31 07:49:03.988989"]]
+  [1m[36mTRANSACTION (10.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 200 OK in 325ms (Views: 0.1ms | ActiveRecord: 13.4ms | Allocations: 9866)
+
+
+Started DELETE "/users/signout" for 127.0.0.1 at 2022-10-31 10:49:35 +0300
+Processing by Users::Devise::SessionsController#destroy as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+Completed 200 OK in 31ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 2492)
+
+
+Started GET "/holder.js/100px180" for 127.0.0.1 at 2022-10-31 10:49:38 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/holder.js/100px180"):
+  
+Started POST "/users/signin" for 127.0.0.1 at 2022-10-31 10:49:50 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007fddfc14bb58>, params: {"email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ngilaian47@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:19:in `create'
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007fddfc14bb58>, params: {"email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]"}} }[0m
+Completed 200 OK in 303ms (Views: 0.6ms | ActiveRecord: 0.3ms | Allocations: 1495)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 10:50:04 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.3ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 37ms (Views: 29.7ms | ActiveRecord: 1.4ms | Allocations: 19959)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 10:50:08 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.5ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 35ms (Views: 28.6ms | ActiveRecord: 1.6ms | Allocations: 19623)
+
+
+Started GET "/holder.js/100px180" for 127.0.0.1 at 2022-10-31 10:50:15 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/holder.js/100px180"):
+  
+Started DELETE "/users/signout" for 127.0.0.1 at 2022-10-31 10:50:21 +0300
+Processing by Users::Devise::SessionsController#destroy as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+Completed 200 OK in 8ms (Views: 0.2ms | ActiveRecord: 0.4ms | Allocations: 1401)
+
+
+Started POST "/users/signin" for 127.0.0.1 at 2022-10-31 10:50:42 +0300
+Processing by Users::Devise::SessionsController#create as */*
+  Parameters: {"email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "session"=>{"email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]"}}
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007fde00ed8a88>, params: {"email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]"}} }[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ngilaian47@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users/devise/sessions_controller.rb:19:in `create'
+[31mUnpermitted parameter: :session. Context: { controller: Users::Devise::SessionsController, action: create, request: #<ActionDispatch::Request:0x00007fde00ed8a88>, params: {"email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]", "controller"=>"users/devise/sessions", "action"=>"create", "session"=>{"email"=>"ngilaian47@gmail.com", "password"=>"[FILTERED]"}} }[0m
+Completed 200 OK in 292ms (Views: 0.4ms | ActiveRecord: 0.1ms | Allocations: 1090)
+
+
+Started DELETE "/users/signout" for 127.0.0.1 at 2022-10-31 10:50:59 +0300
+Processing by Users::Devise::SessionsController#destroy as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.3ms | Allocations: 1423)
+
+
+Started GET "/holder.js/100px180" for 127.0.0.1 at 2022-10-31 10:51:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/holder.js/100px180"):
+  
+Started GET "/holder.js/100px180" for 127.0.0.1 at 2022-10-31 10:51:04 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/holder.js/100px180"):
+  
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 10:51:43 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.3ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.3ms | Allocations: 1239)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 10:51:46 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.4ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.4ms | Allocations: 3539)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 10:52:00 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.2ms | Allocations: 1238)
+
+
+Started GET "/holder.js/100px180" for 127.0.0.1 at 2022-10-31 11:05:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/holder.js/100px180"):
+  
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 11:05:59 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.4ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 3.3ms | Allocations: 3698)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 11:06:53 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.3ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 11ms (Views: 10.9ms | ActiveRecord: 0.3ms | Allocations: 3538)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 11:07:34 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (1.3ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 1.3ms | Allocations: 1299)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 11:07:56 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.6ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.6ms | Allocations: 3538)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 11:09:38 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 1238)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 11:09:48 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.3ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.3ms | Allocations: 1238)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 11:13:29 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.3ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 0.3ms | Allocations: 3538)
+
+
+Started GET "/patients" for 127.0.0.1 at 2022-10-31 11:14:18 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 1238)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-10-31 11:14:27 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.6ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.6ms | Allocations: 3538)
+
+
