@@ -10498,3 +10498,672 @@ Started GET "/pharmacy" for 127.0.0.1 at 2022-11-01 12:00:36 +0300
   
 ActionController::RoutingError (No route matches [GET] "/pharmacy"):
   
+Started GET "/patients" for 127.0.0.1 at 2022-11-02 09:00:46 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 125ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 13612)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 09:00:59 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.3ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 47ms (Views: 42.7ms | ActiveRecord: 1.7ms | Allocations: 19894)
+
+
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 09:04:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/patients" for 127.0.0.1 at 2022-11-02 09:04:23 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 26ms (Views: 25.5ms | ActiveRecord: 0.1ms | Allocations: 626)
+
+
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 09:13:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 09:20:23 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 09:20:25 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/holder.js/100px180" for 127.0.0.1 at 2022-11-02 09:42:23 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/holder.js/100px180"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 09:42:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 09:43:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 09:43:51 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 09:44:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 09:44:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 09:45:18 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 09:45:20 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started POST "/registrar" for 127.0.0.1 at 2022-11-02 09:46:05 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 09:50:47 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 09:53:41 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 09:53:46 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 62ms (Views: 61.7ms | ActiveRecord: 57.8ms | Allocations: 2307)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 09:53:52 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/patients" for 127.0.0.1 at 2022-11-02 09:54:05 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 678)
+
+
+Started GET "/holder.js/100px180" for 127.0.0.1 at 2022-11-02 09:55:55 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/holder.js/100px180"):
+  
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 09:56:04 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.1ms | Allocations: 2146)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 09:56:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 09:57:41 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 09:57:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 09:58:18 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:01:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:04:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:04:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:05:51 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:05:52 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:05:53 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:05:53 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:05:57 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:05:58 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:06:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started POST "/patients" for 127.0.0.1 at 2022-11-02 10:06:47 +0300
+Processing by PatientsController#create as */*
+  Parameters: {"patient_name"=>"", "reg_form_id"=>"", "Reg_number"=>"", "Lab_number"=>"", "Bill"=>"", "Bill_status"=>"", "patient"=>{}}
+[31mUnpermitted parameters: :patient_name, :reg_form_id, :Reg_number, :Lab_number, :Bill, :Bill_status, :patient. Context: { controller: PatientsController, action: create, request: #<ActionDispatch::Request:0x0000564c61e8d100>, params: {"patient_name"=>"", "reg_form_id"=>"", "Reg_number"=>"", "Lab_number"=>"", "Bill"=>"", "Bill_status"=>"", "controller"=>"patients", "action"=>"create", "patient"=>{}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/patients_controller.rb:20:in `create'
+  [1m[36mPatient Create (0.6ms)[0m  [1m[32mINSERT INTO "patients" ("ticket_no", "username", "patient_no", "reg_date", "address", "dob", "contact_no", "email", "guardian", "relation", "gender", "patient_status", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["ticket_no", nil], ["username", nil], ["patient_no", nil], ["reg_date", nil], ["address", nil], ["dob", nil], ["contact_no", nil], ["email", nil], ["guardian", nil], ["relation", nil], ["gender", nil], ["patient_status", nil], ["created_at", "2022-11-02 07:06:47.122843"], ["updated_at", "2022-11-02 07:06:47.122843"], ["name", nil]]
+  ↳ app/controllers/patients_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (181.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/patients_controller.rb:20:in `create'
+Completed 201 Created in 219ms (Views: 0.6ms | ActiveRecord: 184.3ms | Allocations: 20417)
+
+
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:14:40 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 10:15:08 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.4ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 9.7ms | ActiveRecord: 1.5ms | Allocations: 2323)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 10:16:58 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:17:02 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/holder.js/100px180" for 127.0.0.1 at 2022-11-02 10:18:57 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/holder.js/100px180"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:19:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 10:42:36 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 1.0ms | Allocations: 2308)
+
+
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:42:51 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 10:43:05 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/patients" for 127.0.0.1 at 2022-11-02 10:43:07 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.3ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 844)
+
+
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:43:08 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 10:43:10 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms | Allocations: 2146)
+
+
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:44:09 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 10:44:29 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.4ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.4ms | Allocations: 2146)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 10:44:34 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:48:01 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/patients" for 127.0.0.1 at 2022-11-02 10:49:00 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.2ms | Allocations: 767)
+
+
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:49:22 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 10:49:55 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.1ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 2146)
+
+
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:50:51 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 10:51:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/patients" for 127.0.0.1 at 2022-11-02 10:51:56 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.2ms | Allocations: 767)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 10:52:08 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/patients" for 127.0.0.1 at 2022-11-02 10:52:17 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.1ms | Allocations: 767)
+
+
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:55:09 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 10:57:24 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/patients" for 127.0.0.1 at 2022-11-02 10:57:27 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.4ms | ActiveRecord: 0.2ms | Allocations: 767)
+
+
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 10:57:28 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 10:57:29 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.3ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.3ms | Allocations: 2146)
+
+
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 12:09:21 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/patients" for 127.0.0.1 at 2022-11-02 12:09:41 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.3ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 1.0ms | Allocations: 952)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 12:09:43 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms | Allocations: 2192)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 12:09:57 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (9.0ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 15ms (Views: 6.0ms | ActiveRecord: 9.0ms | Allocations: 2147)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 12:10:08 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/patients" for 127.0.0.1 at 2022-11-02 12:10:09 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.2ms | Allocations: 767)
+
+
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 12:10:11 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 12:10:17 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 66ms (Views: 65.2ms | ActiveRecord: 0.2ms | Allocations: 2146)
+
+
+Started GET "/babel/core/lib/parser/index.js" for 127.0.0.1 at 2022-11-02 12:57:18 +0300
+Started GET "/babel/core/lib/transformation/normalize-file.js" for 127.0.0.1 at 2022-11-02 12:57:18 +0300
+Started GET "/dev/Frontend-Hospital-system/node_modules/gensync/index.js" for 127.0.0.1 at 2022-11-02 12:57:18 +0300
+Started GET "/babel/core/lib/transformation/index.js" for 127.0.0.1 at 2022-11-02 12:57:18 +0300
+Started GET "/babel/core/lib/transform.js" for 127.0.0.1 at 2022-11-02 12:57:18 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/core/lib/transform.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/dev/Frontend-Hospital-system/node_modules/gensync/index.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/babel/core/lib/transformation/normalize-file.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/babel/core/lib/transformation/index.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/babel/core/lib/parser/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-11-02 12:57:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/dev/Frontend-Hospital-system/node_modules/gensync/index.js" for 127.0.0.1 at 2022-11-02 12:57:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/dev/Frontend-Hospital-system/node_modules/gensync/index.js"):
+  
+Started GET "/babel/core/lib/transformation/index.js" for 127.0.0.1 at 2022-11-02 12:57:19 +0300
+Started GET "/babel/core/lib/transform.js" for 127.0.0.1 at 2022-11-02 12:57:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/core/lib/transform.js"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/babel/core/lib/transformation/index.js"):
+  
+Started GET "/babel/core/lib/transformation/normalize-file.js" for 127.0.0.1 at 2022-11-02 12:57:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/core/lib/transformation/normalize-file.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-11-02 12:57:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/core/lib/parser/index.js" for 127.0.0.1 at 2022-11-02 12:57:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/core/lib/parser/index.js"):
+  
+Started GET "/holder.js/100px180" for 127.0.0.1 at 2022-11-02 13:01:21 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/holder.js/100px180"):
+  
+Started GET "/holder.js/100px180" for 127.0.0.1 at 2022-11-02 13:33:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/holder.js/100px180"):
+  
+Started GET "/patients" for 127.0.0.1 at 2022-11-02 13:34:53 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 76ms (Views: 75.9ms | ActiveRecord: 29.9ms | Allocations: 951)
+
+
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 13:34:57 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 13:35:03 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 2191)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:35:05 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 13:36:25 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.7ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.7ms | Allocations: 2146)
+
+
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 13:36:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 13:36:32 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 2146)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:36:35 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:42:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:42:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:42:16 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:42:22 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:44:52 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 13:44:59 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/patients" for 127.0.0.1 at 2022-11-02 13:45:22 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.8ms | Allocations: 951)
+
+
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 13:45:25 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 13:45:37 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.3ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.3ms | Allocations: 2191)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:45:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:46:20 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:47:03 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:47:05 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:47:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:47:09 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:47:15 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:47:16 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:47:27 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:47:29 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:47:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:47:45 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-11-02 13:47:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:47:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:47:56 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:48:10 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:48:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:49:21 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 13:49:39 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 13:50:06 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.2ms | Allocations: 2147)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:50:10 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/patients" for 127.0.0.1 at 2022-11-02 13:50:12 +0300
+Processing by PatientsController#index as */*
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients"[0m
+  ↳ app/controllers/patients_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.2ms | Allocations: 767)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 13:50:25 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.4ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 4ms (Views: 3.6ms | ActiveRecord: 0.4ms | Allocations: 2147)
+
+
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 13:51:07 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 6ms (Views: 5.2ms | ActiveRecord: 0.2ms | Allocations: 2147)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:52:15 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-11-02 13:53:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-11-02 13:53:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-11-02 13:53:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-11-02 13:53:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:53:32 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 13:53:38 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 14:49:42 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/registrar" for 127.0.0.1 at 2022-11-02 14:49:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/registrar"):
+  
+Started GET "/staffs" for 127.0.0.1 at 2022-11-02 14:50:00 +0300
+Processing by StaffsController#index as */*
+  [1m[36mStaff Load (0.2ms)[0m  [1m[34mSELECT "staffs".* FROM "staffs"[0m
+  ↳ app/controllers/staffs_controller.rb:8:in `index'
+Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 38.8ms | Allocations: 2307)
+
+
