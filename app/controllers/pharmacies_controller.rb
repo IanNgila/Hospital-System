@@ -31,6 +31,6 @@ class PharmaciesController < ApplicationController
   private
 
    def pharmacy_params
-    params.permit(:id, :patient_id, :ticket_id, :remarks, :inventory_item)
+    params.permit(:patient_id, :ticket_id, :remarks, :inventory_item)
    end
 end
