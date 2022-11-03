@@ -11167,3 +11167,373 @@ Processing by StaffsController#index as */*
 Completed 200 OK in 44ms (Views: 43.5ms | ActiveRecord: 38.8ms | Allocations: 2307)
 
 
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 14:58:56 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started POST "/Pharmacy" for 127.0.0.1 at 2022-11-02 14:59:13 +0300
+  
+ActionController::RoutingError (No route matches [POST] "/Pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:00:53 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:00:54 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:00:56 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:00:59 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:01:33 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:01:33 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:01:33 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:01:33 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:01:33 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:01:33 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:02:28 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:02:35 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:02:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:04:40 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:05:02 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started POST "/pharmacies" for 127.0.0.1 at 2022-11-02 15:05:14 +0300
+Processing by PharmaciesController#create as */*
+  Parameters: {"patient_id"=>"34", "ticket_id"=>"34", "Remark"=>"ma hacc", "inventory_item"=>"tre", "pharmacy"=>{"patient_id"=>"34", "ticket_id"=>"34", "inventory_item"=>"tre"}}
+[31mUnpermitted parameters: :patient_id, :Remark, :pharmacy. Context: { controller: PharmaciesController, action: create, request: #<ActionDispatch::Request:0x00007f311c963990>, params: {"patient_id"=>"34", "ticket_id"=>"34", "Remark"=>"ma hacc", "inventory_item"=>"tre", "controller"=>"pharmacies", "action"=>"create", "pharmacy"=>{"patient_id"=>"34", "ticket_id"=>"34", "inventory_item"=>"tre"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mPharmacy Create (73.4ms)[0m  [1m[32mINSERT INTO "pharmacies" ("patient_id", "ticket_id", "remarks", "inventory_item", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["patient_id", nil], ["ticket_id", 34], ["remarks", nil], ["inventory_item", "tre"], ["created_at", "2022-11-02 12:05:14.780902"], ["updated_at", "2022-11-02 12:05:14.780902"]]
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (162.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+Completed 200 OK in 387ms (Views: 0.5ms | ActiveRecord: 267.4ms | Allocations: 15991)
+
+
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-11-02 15:08:59 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-11-02 15:08:59 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-11-02 15:08:59 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-11-02 15:09:00 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-11-02 15:09:00 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:09:00 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:10:40 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:10:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:10:46 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:10:48 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:11:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-11-02 15:11:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:11:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:11:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:11:49 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:11:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:11:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-11-02 15:11:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:11:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:11:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:11:50 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-11-02 15:11:58 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:11:58 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/babel/parser/lib/index.js" for 127.0.0.1 at 2022-11-02 15:12:08 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/babel/parser/lib/index.js"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:12:08 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:12:14 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:12:31 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started POST "/pharmacies" for 127.0.0.1 at 2022-11-02 15:12:50 +0300
+Processing by PharmaciesController#create as */*
+  Parameters: {"patient_id"=>"23", "ticket_id"=>"23", "Remark"=>"rujhg", "inventory_item"=>"ytdf", "pharmacy"=>{"patient_id"=>"23", "ticket_id"=>"23", "inventory_item"=>"ytdf"}}
+[31mUnpermitted parameters: :patient_id, :Remark, :pharmacy. Context: { controller: PharmaciesController, action: create, request: #<ActionDispatch::Request:0x00007f311c102670>, params: {"patient_id"=>"23", "ticket_id"=>"23", "Remark"=>"rujhg", "inventory_item"=>"ytdf", "controller"=>"pharmacies", "action"=>"create", "pharmacy"=>{"patient_id"=>"23", "ticket_id"=>"23", "inventory_item"=>"ytdf"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mPharmacy Create (0.3ms)[0m  [1m[32mINSERT INTO "pharmacies" ("patient_id", "ticket_id", "remarks", "inventory_item", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["patient_id", nil], ["ticket_id", 23], ["remarks", nil], ["inventory_item", "ytdf"], ["created_at", "2022-11-02 12:12:50.123775"], ["updated_at", "2022-11-02 12:12:50.123775"]]
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (119.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+Completed 200 OK in 138ms (Views: 0.4ms | ActiveRecord: 129.0ms | Allocations: 2005)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:13:19 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started POST "/pharmacies" for 127.0.0.1 at 2022-11-02 15:13:54 +0300
+Processing by PharmaciesController#create as */*
+  Parameters: {"patient_id"=>"12345678", "ticket_id"=>"1234567", "Remark"=>"asdfgn", "inventory_item"=>"acvacca", "pharmacy"=>{"patient_id"=>"12345678", "ticket_id"=>"1234567", "inventory_item"=>"acvacca"}}
+[31mUnpermitted parameters: :patient_id, :Remark, :pharmacy. Context: { controller: PharmaciesController, action: create, request: #<ActionDispatch::Request:0x00007f31040611e8>, params: {"patient_id"=>"12345678", "ticket_id"=>"1234567", "Remark"=>"asdfgn", "inventory_item"=>"acvacca", "controller"=>"pharmacies", "action"=>"create", "pharmacy"=>{"patient_id"=>"12345678", "ticket_id"=>"1234567", "inventory_item"=>"acvacca"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mPharmacy Create (0.3ms)[0m  [1m[32mINSERT INTO "pharmacies" ("patient_id", "ticket_id", "remarks", "inventory_item", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["patient_id", nil], ["ticket_id", 1234567], ["remarks", nil], ["inventory_item", "acvacca"], ["created_at", "2022-11-02 12:13:54.179081"], ["updated_at", "2022-11-02 12:13:54.179081"]]
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (137.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+Completed 200 OK in 143ms (Views: 0.4ms | ActiveRecord: 138.0ms | Allocations: 1887)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:14:13 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started POST "/pharmacies" for 127.0.0.1 at 2022-11-02 15:16:24 +0300
+Processing by PharmaciesController#create as */*
+  Parameters: {"patient_id"=>"23", "ticket_id"=>"23", "Remark"=>"ma hacc", "inventory_item"=>"acvacca", "pharmacy"=>{"patient_id"=>"23", "ticket_id"=>"23", "inventory_item"=>"acvacca"}}
+[31mUnpermitted parameters: :patient_id, :Remark, :pharmacy. Context: { controller: PharmaciesController, action: create, request: #<ActionDispatch::Request:0x00007f311cfd8078>, params: {"patient_id"=>"23", "ticket_id"=>"23", "Remark"=>"ma hacc", "inventory_item"=>"acvacca", "controller"=>"pharmacies", "action"=>"create", "pharmacy"=>{"patient_id"=>"23", "ticket_id"=>"23", "inventory_item"=>"acvacca"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mPharmacy Create (0.7ms)[0m  [1m[32mINSERT INTO "pharmacies" ("patient_id", "ticket_id", "remarks", "inventory_item", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["patient_id", nil], ["ticket_id", 23], ["remarks", nil], ["inventory_item", "acvacca"], ["created_at", "2022-11-02 12:16:24.479958"], ["updated_at", "2022-11-02 12:16:24.479958"]]
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (97.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+Completed 200 OK in 108ms (Views: 0.5ms | ActiveRecord: 98.8ms | Allocations: 1885)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:21:02 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started POST "/pharmacies" for 127.0.0.1 at 2022-11-02 15:21:22 +0300
+Processing by PharmaciesController#create as */*
+  Parameters: {"patient_id"=>"12", "ticket_id"=>"23", "Remark"=>"ma hacc", "inventory_item"=>"trap", "pharmacy"=>{"patient_id"=>"12", "ticket_id"=>"23", "inventory_item"=>"trap"}}
+[31mUnpermitted parameters: :Remark, :pharmacy. Context: { controller: PharmaciesController, action: create, request: #<ActionDispatch::Request:0x00007f25a80252e0>, params: {"patient_id"=>"12", "ticket_id"=>"23", "Remark"=>"ma hacc", "inventory_item"=>"trap", "controller"=>"pharmacies", "action"=>"create", "pharmacy"=>{"patient_id"=>"12", "ticket_id"=>"23", "inventory_item"=>"trap"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mPharmacy Create (0.4ms)[0m  [1m[32mINSERT INTO "pharmacies" ("patient_id", "ticket_id", "remarks", "inventory_item", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["patient_id", 12], ["ticket_id", 23], ["remarks", nil], ["inventory_item", "trap"], ["created_at", "2022-11-02 12:21:22.807498"], ["updated_at", "2022-11-02 12:21:22.807498"]]
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (165.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+Completed 200 OK in 445ms (Views: 0.5ms | ActiveRecord: 166.5ms | Allocations: 30310)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:33:07 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started POST "/pharmacies" for 127.0.0.1 at 2022-11-02 15:33:21 +0300
+Processing by PharmaciesController#create as */*
+  Parameters: {"patient_id"=>"12", "ticket_id"=>"21", "Remark"=>"ma hacc", "inventory_item"=>"acvacca", "pharmacy"=>{"patient_id"=>"12", "ticket_id"=>"21", "inventory_item"=>"acvacca"}}
+[31mUnpermitted parameters: :Remark, :pharmacy. Context: { controller: PharmaciesController, action: create, request: #<ActionDispatch::Request:0x00007f25a42e9728>, params: {"patient_id"=>"12", "ticket_id"=>"21", "Remark"=>"ma hacc", "inventory_item"=>"acvacca", "controller"=>"pharmacies", "action"=>"create", "pharmacy"=>{"patient_id"=>"12", "ticket_id"=>"21", "inventory_item"=>"acvacca"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+Completed 200 OK in 152ms (Views: 0.4ms | ActiveRecord: 2.6ms | Allocations: 11929)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:33:30 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:49:31 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started POST "/pharmacies" for 127.0.0.1 at 2022-11-02 15:52:59 +0300
+Processing by PharmaciesController#create as */*
+  Parameters: {"patient_id"=>"12", "ticket_id"=>"23", "Remark"=>"ew", "inventory_item"=>"re", "pharmacy"=>{"patient_id"=>"12", "ticket_id"=>"23", "inventory_item"=>"re"}}
+[31mUnpermitted parameters: :Remark, :pharmacy. Context: { controller: PharmaciesController, action: create, request: #<ActionDispatch::Request:0x0000555e5b2c7310>, params: {"patient_id"=>"12", "ticket_id"=>"23", "Remark"=>"ew", "inventory_item"=>"re", "controller"=>"pharmacies", "action"=>"create", "pharmacy"=>{"patient_id"=>"12", "ticket_id"=>"23", "inventory_item"=>"re"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mPatient Load (0.3ms)[0m  [1m[34mSELECT "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 23], ["LIMIT", 1]]
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+Completed 200 OK in 25ms (Views: 0.5ms | ActiveRecord: 1.3ms | Allocations: 6406)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:53:55 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:54:38 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:54:38 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:54:47 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started POST "/pharmacies" for 127.0.0.1 at 2022-11-02 15:54:58 +0300
+Processing by PharmaciesController#create as */*
+  Parameters: {"patient_id"=>"12", "ticket_id"=>"12", "Remark"=>"ma hacc", "inventory_item"=>"acvacca", "pharmacy"=>{"patient_id"=>"12", "ticket_id"=>"12", "inventory_item"=>"acvacca"}}
+[31mUnpermitted parameters: :Remark, :pharmacy. Context: { controller: PharmaciesController, action: create, request: #<ActionDispatch::Request:0x00007f25b5032ca8>, params: {"patient_id"=>"12", "ticket_id"=>"12", "Remark"=>"ma hacc", "inventory_item"=>"acvacca", "controller"=>"pharmacies", "action"=>"create", "pharmacy"=>{"patient_id"=>"12", "ticket_id"=>"12", "inventory_item"=>"acvacca"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mPatient Load (0.1ms)[0m  [1m[34mSELECT "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 0.5ms | Allocations: 2897)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 15:56:03 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started POST "/pharmacies" for 127.0.0.1 at 2022-11-02 15:56:15 +0300
+Processing by PharmaciesController#create as */*
+  Parameters: {"patient_id"=>"12", "ticket_id"=>"12", "Remark"=>"ret", "inventory_item"=>"trep", "pharmacy"=>{"patient_id"=>"12", "ticket_id"=>"12", "inventory_item"=>"trep"}}
+[31mUnpermitted parameters: :Remark, :pharmacy. Context: { controller: PharmaciesController, action: create, request: #<ActionDispatch::Request:0x00007f997801f630>, params: {"patient_id"=>"12", "ticket_id"=>"12", "Remark"=>"ret", "inventory_item"=>"trep", "controller"=>"pharmacies", "action"=>"create", "pharmacy"=>{"patient_id"=>"12", "ticket_id"=>"12", "inventory_item"=>"trep"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mPatient Load (0.2ms)[0m  [1m[34mSELECT "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mTicket Load (0.1ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+Completed 200 OK in 137ms (Views: 0.4ms | ActiveRecord: 2.6ms | Allocations: 37054)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 16:11:43 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
+Started POST "/pharmacies" for 127.0.0.1 at 2022-11-02 16:12:04 +0300
+Processing by PharmaciesController#create as */*
+  Parameters: {"patient_id"=>"12", "ticket_id"=>"12", "Remark"=>"ma hacc", "inventory_item"=>"acvacca", "pharmacy"=>{"patient_id"=>"12", "ticket_id"=>"12", "inventory_item"=>"acvacca"}}
+[31mUnpermitted parameters: :Remark, :pharmacy. Context: { controller: PharmaciesController, action: create, request: #<ActionDispatch::Request:0x00007f99780fa960>, params: {"patient_id"=>"12", "ticket_id"=>"12", "Remark"=>"ma hacc", "inventory_item"=>"acvacca", "controller"=>"pharmacies", "action"=>"create", "pharmacy"=>{"patient_id"=>"12", "ticket_id"=>"12", "inventory_item"=>"acvacca"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mPatient Load (0.3ms)[0m  [1m[34mSELECT "patients".* FROM "patients" WHERE "patients"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mTicket Load (0.2ms)[0m  [1m[34mSELECT "tickets".* FROM "tickets" WHERE "tickets"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/pharmacies_controller.rb:14:in `create'
+Completed 200 OK in 12ms (Views: 0.4ms | ActiveRecord: 1.4ms | Allocations: 3141)
+
+
+Started GET "/pharmacy" for 127.0.0.1 at 2022-11-02 16:12:07 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/pharmacy"):
+  
