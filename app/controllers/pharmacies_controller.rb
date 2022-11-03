@@ -12,7 +12,8 @@ class PharmaciesController < ApplicationController
   
    def create
     pharmacies = Pharmacy.create(pharmacy_params)
-    render json: pharmacies
+    render json: pharmacies, status: :created
+    
    end
  
    def update
@@ -30,6 +31,6 @@ class PharmaciesController < ApplicationController
   private
 
    def pharmacy_params
-    params.permit(:patient_id, :ticket_id, :remarks, :inventory_item)
+    params.permit(:id, :patient_id, :ticket_id, :remarks, :inventory_item)
    end
 end
