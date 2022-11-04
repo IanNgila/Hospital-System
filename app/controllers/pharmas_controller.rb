@@ -46,6 +46,7 @@ class PharmasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pharma_params
-      params.fetch(:pharma, {})
+      # params.fetch(:pharma, {})
+      params.permit(:patient_id, :ticket_id, :remark, :inventory_item)
     end
 end
